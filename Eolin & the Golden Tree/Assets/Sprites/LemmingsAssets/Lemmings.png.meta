@@ -1,0 +1,804 @@
+fileFormatVersion: 2
+guid: 61f353767ba706c4eb6a38765f9472f5
+timeCreated: 1446871004
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Lemmings_0
+    21300002: Other Systems - Lemmings Amiga - Lemming_0
+    21300004: Other Systems - Lemmings Amiga - Lemming_1
+    21300006: Other Systems - Lemmings Amiga - Lemming_2
+    21300008: Other Systems - Lemmings Amiga - Lemming_3
+    21300010: Other Systems - Lemmings Amiga - Lemming_4
+    21300012: Other Systems - Lemmings Amiga - Lemming_5
+    21300014: Other Systems - Lemmings Amiga - Lemming_6
+    21300016: Other Systems - Lemmings Amiga - Lemming_7
+    21300018: Other Systems - Lemmings Amiga - Lemming_8
+    21300020: Other Systems - Lemmings Amiga - Lemming_9
+    21300022: Other Systems - Lemmings Amiga - Lemming_10
+    21300024: Other Systems - Lemmings Amiga - Lemming_11
+    21300026: Other Systems - Lemmings Amiga - Lemming_12
+    21300028: Other Systems - Lemmings Amiga - Lemming_13
+    21300030: Other Systems - Lemmings Amiga - Lemming_14
+    21300032: Other Systems - Lemmings Amiga - Lemming_15
+    21300034: Other Systems - Lemmings Amiga - Lemming_16
+    21300036: Other Systems - Lemmings Amiga - Lemming_17
+    21300038: Other Systems - Lemmings Amiga - Lemming_18
+    21300040: Other Systems - Lemmings Amiga - Lemming_19
+    21300042: Other Systems - Lemmings Amiga - Lemming_20
+    21300044: Other Systems - Lemmings Amiga - Lemming_21
+    21300046: Lemmings_1
+    21300048: Lemmings_2
+    21300050: Lemmings_3
+    21300052: Lemmings_4
+    21300054: Lemmings_5
+    21300056: Lemmings_6
+    21300058: Lemmings_7
+    21300060: Lemmings_8
+    21300062: Lemmings_9
+    21300064: Lemmings_10
+    21300066: Lemmings_11
+    21300068: Lemmings_12
+    21300070: Lemmings_13
+    21300072: Lemmings_14
+    21300074: Lemmings_15
+    21300076: Lemmings_16
+    21300078: Lemmings_17
+    21300080: Lemmings_18
+    21300082: Lemmings_19
+    21300084: Lemmings_20
+    21300086: Lemmings_21
+    21300088: Lemmings_22
+    21300090: Lemmings_23
+    21300092: Lemmings_24
+    21300094: Lemmings_25
+    21300096: Lemmings_26
+    21300098: Lemmings_27
+    21300100: Lemmings_28
+    21300102: Lemmings_29
+    21300104: Lemmings_30
+    21300106: Lemmings_31
+    21300108: Lemmings_32
+    21300110: Lemmings_33
+    21300112: Lemmings_34
+    21300114: Lemmings_35
+    21300116: Lemmings_36
+    21300118: Lemmings_37
+    21300120: Lemmings_38
+    21300122: Lemmings_39
+    21300124: Lemmings_40
+    21300126: Lemmings_41
+    21300128: Lemmings_42
+    21300130: Lemmings_43
+    21300132: Lemmings_44
+    21300134: Lemmings_45
+    21300136: Lemmings_46
+    21300138: Lemmings_47
+    21300140: Lemmings_48
+    21300142: Lemmings_49
+    21300144: Lemmings_50
+    21300146: Lemmings_51
+    21300148: Lemmings_52
+    21300150: Lemmings_53
+    21300152: Lemmings_54
+    21300154: Lemmings_55
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Other Systems - Lemmings Amiga - Lemming_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 364
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 364
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 364
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 364
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 364
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_5
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 364
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 364
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 364
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_15
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 354
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 193
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 193
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_18
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 193
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_19
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 193
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 192
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Other Systems - Lemmings Amiga - Lemming_21
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 335
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 335
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 335
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 335
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 322
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 322
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 322
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 322
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_12
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 322
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 322
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 322
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 322
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_24
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 294
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_25
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 298
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_26
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 300
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_27
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 301
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_28
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 301
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_29
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 302
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_30
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 302
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_31
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 301
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_40
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 140
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 140
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_42
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 140
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_43
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 140
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_44
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 140
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_45
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 140
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_46
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 140
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_47
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 140
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_48
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_49
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_51
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_52
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_53
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 127
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_54
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 127
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_55
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 127
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 263
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 263
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 263
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 263
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 263
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_17
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 263
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_18
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 263
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_19
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 264
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_20
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 192
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 192
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_22
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 192
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 192
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_32
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 193
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_33
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 193
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_34
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 193
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lemmings_35
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 200
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
