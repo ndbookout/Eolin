@@ -4,17 +4,19 @@ using System.Collections.Generic;
 
 public class EolinCharacterController : MonoBehaviour 
 {
-	private Rigidbody2D eolinRigid;
+    public static EolinCharacterController Eolin;  
+
+    private Rigidbody2D eolinRigid;
 	private Animator eolinAnim;
 
     public GameObject arrow;
     private GameObject loadedArrow;
     public float arrowSpeed;
-
 	public float maxSpeed;
-	public float speed;
+	public float speedMultiplier;
     public float jumpSpeed;
-	private bool isFlipped; //starts facing to left
+
+	public bool isFlipped; //starts facing to left
     private bool isGrounded;
     private bool hasJumped;
 
@@ -26,7 +28,8 @@ public class EolinCharacterController : MonoBehaviour
 	// Use this for initialization
 	void Start() 
 	{
-		eolinRigid = GetComponent<Rigidbody2D>();
+        Eolin = this;
+        eolinRigid = GetComponent<Rigidbody2D>();
 		eolinAnim = GetComponent<Animator>();
 
 		isFlipped = false;
@@ -61,7 +64,7 @@ public class EolinCharacterController : MonoBehaviour
 
 			if (eolinRigid.velocity.magnitude < maxSpeed)
 			{
-				eolinRigid.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
+				eolinRigid.AddForce(new Vector2(Input.GetAxis("Horizontal") * speedMultiplier, 0));
 				eolinAnim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
 			}
 		}
@@ -81,10 +84,10 @@ public class EolinCharacterController : MonoBehaviour
 		tempScale.x *= -1;
 		transform.localScale = tempScale;
 
-		//if (loadedArrow != null) 
-		//	loadedArrow.GetComponent<Arrow> ().Flip ();
+        if (loadedArrow != null)
+            loadedArrow.GetComponent<Arrow>().Flip();
 
-		isFlipped = !isFlipped;
+        isFlipped = !isFlipped;
 	}
 
     void CheckForGround()
@@ -213,8 +216,8 @@ public class EolinCharacterController : MonoBehaviour
         if (loadedArrow == null)
         {
    	       loadedArrow = Instantiate(arrow) as GameObject;
-            loadedArrow.transform.parent = this.transform;
-            AdjustArrow();
+           loadedArrow.transform.SetParent(this.transform, false);
+           AdjustArrow();
         }  
     }
 

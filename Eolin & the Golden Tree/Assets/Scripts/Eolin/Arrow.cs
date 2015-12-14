@@ -5,11 +5,12 @@ public class Arrow : MonoBehaviour
 {
     private Rigidbody2D arrowRigid;
     public float arrowSpeed;
+    private bool isFlipped; //starts facing left
 
     void Start()
     {
         arrowRigid = GetComponent<Rigidbody2D>();
-        //Fire();
+        isFlipped = false;
     }
 
     void OnCollisionEnter(Collision collide)
@@ -21,7 +22,18 @@ public class Arrow : MonoBehaviour
 
     public void Fire()
     {
-        arrowRigid.velocity = new Vector2(-arrowSpeed, 0);
+        if (EolinCharacterController.Eolin.isFlipped)
+            arrowRigid.velocity = new Vector2(arrowSpeed, 0);
+        else
+            arrowRigid.velocity = new Vector2(-arrowSpeed, 0);
+
+        new Task(DestroyArrow());
+    }
+
+    private IEnumerator DestroyArrow()
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(this.gameObject);
     }
 
 	public void Flip()
@@ -29,5 +41,5 @@ public class Arrow : MonoBehaviour
 		Vector2 tempScale = transform.localScale;
 		tempScale.x *= -1;
 		transform.localScale = tempScale;
-	}
+    }
 }
