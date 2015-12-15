@@ -1,31 +1,9 @@
 fileFormatVersion: 2
-guid: d3785a08009ec3c4b8479208ced7a1af
-timeCreated: 1446850992
+guid: 5b51c78f702d5074f819e1187a2c2043
+timeCreated: 1450157236
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Other Systems - Lemmings Amiga - Lemming_0
-    21300002: Other Systems - Lemmings Amiga - Lemming_1
-    21300004: Other Systems - Lemmings Amiga - Lemming_2
-    21300006: Other Systems - Lemmings Amiga - Lemming_3
-    21300008: Other Systems - Lemmings Amiga - Lemming_4
-    21300010: Other Systems - Lemmings Amiga - Lemming_5
-    21300012: Other Systems - Lemmings Amiga - Lemming_6
-    21300014: Other Systems - Lemmings Amiga - Lemming_7
-    21300016: Other Systems - Lemmings Amiga - Lemming_8
-    21300018: Other Systems - Lemmings Amiga - Lemming_9
-    21300020: Other Systems - Lemmings Amiga - Lemming_10
-    21300022: Other Systems - Lemmings Amiga - Lemming_11
-    21300024: Other Systems - Lemmings Amiga - Lemming_12
-    21300026: Other Systems - Lemmings Amiga - Lemming_13
-    21300028: Other Systems - Lemmings Amiga - Lemming_14
-    21300030: Other Systems - Lemmings Amiga - Lemming_15
-    21300032: Other Systems - Lemmings Amiga - Lemming_16
-    21300034: Other Systems - Lemmings Amiga - Lemming_17
-    21300036: Other Systems - Lemmings Amiga - Lemming_18
-    21300038: Other Systems - Lemmings Amiga - Lemming_19
-    21300040: Other Systems - Lemmings Amiga - Lemming_20
-    21300042: Other Systems - Lemmings Amiga - Lemming_21
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -39,20 +17,20 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
+  cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
-    aniso: 16
+    filterMode: -1
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -60,238 +38,19 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Other Systems - Lemmings Amiga - Lemming_0
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 364
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 364
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_2
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 364
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_3
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 364
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_4
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 364
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_5
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 364
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_6
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 364
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_7
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 364
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_8
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 354
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_9
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 354
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_10
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 354
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_11
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 354
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_12
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 354
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_13
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 354
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_14
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 354
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_15
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 354
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_16
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 193
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_17
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 193
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_18
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 193
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_19
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 193
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_20
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 192
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Other Systems - Lemmings Amiga - Lemming_21
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 192
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
