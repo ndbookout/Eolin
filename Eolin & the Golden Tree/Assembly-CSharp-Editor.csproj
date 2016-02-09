@@ -57,9 +57,9 @@
      <None Include="Assets\Resources\First Chest\!Readme.txt" />
      <None Include="Assets\Sprites\Ardentryst-GUICursorsArrowsIconsMarkers\Ardentryst-GUICursorsArrowsIconsMarkers\license-ccby3up.txt" />
      <None Include="Assets\Resources\First Chest\iTween\ReadMe!\ReadMe!.txt" />
-     <None Include="Assets\Sprites\LemmingsAssets\000_Plateform_Tiles\attr.txt" />
+     <None Include="Assets\Sprites\Tilesets\000_Plateform_Tiles\attr.txt" />
      <None Include="Assets\Editor\CM Tools\TileMasterReadme.txt" />
-     <None Include="Assets\Sprites\LemmingsAssets\TilesSogomn\readme.txt" />
+     <None Include="Assets\Sprites\Tilesets\TilesSogomn\readme.txt" />
      <None Include="Assets\Sprites\Monsters\readme.txt" />
      <None Include="Assets\Resources\First Chest\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Sprites\LemmingsAssets\SmilinJoe\Xfcn-SmilinJoe\Xfcn-SmilinJoe\Xfcn-SmilinJoe-license.txt" />
@@ -93,9 +93,10 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
- <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
- </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{AA2EA346-4AC2-BE9B-6416-15DA397E55F1}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

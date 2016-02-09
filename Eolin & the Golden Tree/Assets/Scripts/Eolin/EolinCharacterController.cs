@@ -8,6 +8,7 @@ public class EolinCharacterController : MonoBehaviour
 
     private Rigidbody2D eolinRigid;
 	private Animator eolinAnim;
+    private SpriteRenderer eolinRender;
 
     public GameObject arrow;
     private GameObject loadedArrow;
@@ -21,9 +22,9 @@ public class EolinCharacterController : MonoBehaviour
     private bool hasJumped;
 
     private bool isAiming;
-    private bool goodForm;
+    public bool goodForm;
 
-    private int groundMask = 1 << 9;
+    private int groundMask = 1 << 10;
 
 	// Use this for initialization
 	void Start() 
@@ -31,13 +32,14 @@ public class EolinCharacterController : MonoBehaviour
         Eolin = this;
         eolinRigid = GetComponent<Rigidbody2D>();
 		eolinAnim = GetComponent<Animator>();
-
+        eolinRender = GetComponent<SpriteRenderer>();
 		isFlipped = false;
     }
 
     void Update()
     {
-        AimControl();
+        if (isGrounded)
+            AimControl();
     }
 	
 	// Update is called once per frame
@@ -64,14 +66,17 @@ public class EolinCharacterController : MonoBehaviour
 
 			if (eolinRigid.velocity.magnitude < maxSpeed)
 			{
-				eolinRigid.AddForce(new Vector2(Input.GetAxis("Horizontal") * speedMultiplier, 0));
-				eolinAnim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+                if (!goodForm)
+                    eolinRigid.AddForce(new Vector2(Input.GetAxis("Horizontal") * speedMultiplier, 0));
+
+                if (isGrounded)
+				    eolinAnim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
 			}
 		}
 
         if (Input.GetAxis("Vertical") > 0 && isGrounded && !isAiming)
         {
-            eolinRigid.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
+            eolinRigid.AddForce(new Vector2(eolinRigid.velocity.x, jumpSpeed), ForceMode2D.Impulse);
             eolinAnim.SetBool("Fall", true);
 
             hasJumped = true;
@@ -80,21 +85,23 @@ public class EolinCharacterController : MonoBehaviour
 
 	void Flip()
 	{
-		Vector2 tempScale = transform.localScale;
-		tempScale.x *= -1;
-		transform.localScale = tempScale;
+        //Vector2 tempScale = transform.localScale;
+        //tempScale.x *= -1;
+        //transform.localScale = tempScale;
 
-        if (loadedArrow != null)
-            loadedArrow.GetComponent<Arrow>().Flip();
-
+        eolinRender.flipX = !eolinRender.flipX;
         isFlipped = !isFlipped;
+        if (loadedArrow != null)
+            loadedArrow.GetComponent<Arrow>().AdjustArrow(goodForm, isFlipped);
+
+        
 	}
 
     void CheckForGround()
     {
-        bool ground = Physics2D.Raycast(eolinRigid.position, Vector2.down, 
-            eolinRigid.transform.localScale.y/2, groundMask);
-        //Debug.Log(Physics2D.Raycast(eolinRigid.position, Vector2.down, eolinRigid.transform.localScale.y / 2, groundMask).point);
+        bool ground = Physics2D.Raycast(eolinRigid.position, Vector2.down, 1, groundMask);
+        //Debug.DrawRay(eolinRigid.position, Vector2.down, Color.red, 1f);
+        //Debug.Log("Raycast at: " + Physics2D.Raycast(eolinRigid.position, Vector2.down, 1, groundMask).point);
 
         if (ground && !hasJumped)
         {
@@ -147,7 +154,7 @@ public class EolinCharacterController : MonoBehaviour
             Debug.Log("Such good form!");
             eolinAnim.SetBool("Aim", true);
             isAiming = true;
-            AdjustArrow();
+            loadedArrow.GetComponent<Arrow>().AdjustArrow(goodForm, isFlipped);
         }
         //else if (Input.GetKey(KeyCode.A) && loadedArrow != null)
         //{
@@ -175,7 +182,7 @@ public class EolinCharacterController : MonoBehaviour
             isAiming = false;
             eolinAnim.SetBool("Aim", false);
 
-            if (loadedArrow != null)
+			if (loadedArrow != null && eolinAnim.GetBool("Fire") != true)
             {
                 //StartCoroutine(LoadArrow());
                 Destroy(loadedArrow);
@@ -188,7 +195,7 @@ public class EolinCharacterController : MonoBehaviour
             StartCoroutine(Fire());
         }
 
-        Debug.Log(loadedArrow);
+        //Debug.Log(loadedArrow);
     }
 
     IEnumerator Fire()
@@ -217,21 +224,28 @@ public class EolinCharacterController : MonoBehaviour
         {
    	       loadedArrow = Instantiate(arrow) as GameObject;
            loadedArrow.transform.SetParent(this.transform, false);
-           AdjustArrow();
+           loadedArrow.GetComponent<Arrow>().AdjustArrow(goodForm, isFlipped);
         }  
     }
 
-    void AdjustArrow()
-    {
-        if (goodForm)
-        {
-            loadedArrow.transform.localPosition = new Vector2(-0.1f, -0.06f);
-            loadedArrow.transform.localRotation = Quaternion.Euler(0, 0, 50);
-        }
-        else
-        {
-            loadedArrow.transform.localPosition = new Vector2(-0.1f, 0);
-            loadedArrow.transform.localRotation = Quaternion.Euler(0, 0, 90);
-        }
-    }
+    //void AdjustArrow()
+    //{
+    //    if (goodForm)
+    //    {
+    //        if (isFlipped)
+    //            loadedArrow.transform.localPosition = new Vector2(0.1f, -0.06f);
+    //        else
+    //            loadedArrow.transform.localPosition = new Vector2(-0.1f, -0.06f);
+
+    //        loadedArrow.transform.localRotation = Quaternion.Euler(0, 0, 50);
+    //    }
+    //    else
+    //    {
+    //        loadedArrow.transform.localPosition = new Vector2(-0.1f, 0);
+    //        loadedArrow.transform.localRotation = Quaternion.Euler(0, 0, 90);
+    //    }
+
+    //    if (isFlipped)
+    //        loadedArrow.GetComponent<Arrow>().Flip(goodForm);
+    //}
 }

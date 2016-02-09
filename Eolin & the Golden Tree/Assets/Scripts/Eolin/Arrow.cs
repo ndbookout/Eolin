@@ -4,16 +4,26 @@ using System.Collections;
 public class Arrow : MonoBehaviour
 {
     private Rigidbody2D arrowRigid;
+    private SpriteRenderer arrowRender;
     public float arrowSpeed;
-    private bool isFlipped; //starts facing left
+	private bool isFlipped; //starts facing left
+	public bool isFired; 
 
     void Start()
     {
         arrowRigid = GetComponent<Rigidbody2D>();
-        isFlipped = false;
+        arrowRender = GetComponent<SpriteRenderer>();
+		isFlipped = false;
+		isFired = false;
     }
 
-    void OnCollisionEnter(Collision collide)
+	void FixedUpdate()
+	{
+		if (!isFired)
+			AdjustArrow (EolinCharacterController.Eolin.goodForm, EolinCharacterController.Eolin.isFlipped);
+	}
+
+    void OnCollisionEnter2D(Collision2D collide)
     {
         transform.parent = collide.transform;
         arrowRigid.velocity = Vector2.zero;
@@ -22,7 +32,10 @@ public class Arrow : MonoBehaviour
 
     public void Fire()
     {
-        if (EolinCharacterController.Eolin.isFlipped)
+		isFired = true;
+		//arrowRigid.gravityScale = 0.5f;
+
+		if (EolinCharacterController.Eolin.isFlipped)
             arrowRigid.velocity = new Vector2(arrowSpeed, 0);
         else
             arrowRigid.velocity = new Vector2(-arrowSpeed, 0);
@@ -32,14 +45,51 @@ public class Arrow : MonoBehaviour
 
     private IEnumerator DestroyArrow()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         Destroy(this.gameObject);
     }
 
-	public void Flip()
-	{
-		Vector2 tempScale = transform.localScale;
-		tempScale.x *= -1;
-		transform.localScale = tempScale;
+    public void AdjustArrow(bool rotated, bool flipped)
+    {
+        if (rotated)
+        {
+            if (flipped)
+            {
+                transform.localPosition = new Vector2(0.1f, -0.06f);
+                transform.rotation = Quaternion.Euler(0, 0, -50);
+            }                
+            else
+            {
+                transform.localPosition = new Vector2(-0.1f, -0.06f);
+                transform.rotation = Quaternion.Euler(0, 0, 50);
+            }               
+        }
+        else
+        {            
+            transform.localRotation = Quaternion.Euler(0, 0, 90);
+
+			if (flipped)
+            {
+                transform.localPosition = new Vector2(0.1f, 0);
+
+				if(!isFlipped)
+					Flip ();
+            }    
+			else if (!flipped)
+            {
+                transform.localPosition = new Vector2(-0.1f, 0);	
+
+				if(isFlipped)
+					Flip ();
+            }               
+        }
     }
+
+	void Flip()
+	{
+		Vector3 scaler = transform.localScale;
+		scaler *= -1;
+		transform.localScale = scaler;
+		isFlipped = !isFlipped;
+	}
 }
